@@ -1,4 +1,4 @@
-module github.com/sparkymat/picky
+module github.com/sparkymat/pidi
 
 go 1.20
 
