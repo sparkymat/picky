@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
+	"github.com/sparkymat/pidi/setup"
 	"github.com/urfave/cli/v2"
 )
 
@@ -14,12 +14,9 @@ func main() {
 		Usage: "a commandline key-value store",
 		Commands: []*cli.Command{
 			{
-				Name:  "setup",
-				Usage: "configure pidi",
-				Action: func(cCtx *cli.Context) error {
-					fmt.Println("configure it!")
-					return nil
-				},
+				Name:   "setup",
+				Usage:  "configure pidi",
+				Action: setup.Configure,
 			},
 		},
 	}
